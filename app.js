@@ -8,13 +8,13 @@ const grafico = document.querySelector(".foto");
 boton.addEventListener("click", ()=>{
 
     if (peso.value == "" || altura.value == "") {
-        print("Ingrese los datos");
+        alert("Ingrese los datos");
     } else {
         const inputPeso = peso.value;
         const inputAltura = altura.value;
 
         if (inputPeso <= 0 || inputAltura <= 0) {
-            print("datos no validos");
+            alert("datos no validos");
         }
         else {
             const imc = inputPeso / (inputAltura * inputAltura)
